@@ -8,9 +8,9 @@
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/cjs/index.js"
     },
     "./css": "./dist/css/rpgui.css"
   },
@@ -64,7 +64,9 @@
     "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
-  },
-  "dependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4"
   }
 }
