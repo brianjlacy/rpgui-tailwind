@@ -52,6 +52,10 @@ export default tseslint.config(
       '*.config.js',
       '*.config.ts',
       'src-legacy/**',
+      '**/*.test.ts',
+      '**/*.spec.ts',
+      'src/test/**',
+      'e2e/**',
     ],
   }
 );
