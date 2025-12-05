@@ -1,3 +1,6 @@
+/* Import Press Start 2P font from Google Fonts - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 @import 'tailwindcss';
 
 /*
@@ -73,11 +76,51 @@
   --color-rpg-active: rgba(0, 0, 0, 0.2);
   --color-rpg-focus: #d4a537;
   --color-rpg-disabled: #6b6b6b;
+
+  /* ----------------------------------------
+   * Typography - Task 2.2
+   * ---------------------------------------- */
+
+  /* Font Families */
+  --font-rpg: 'Press Start 2P', 'Courier New', Courier, monospace;
+  --font-rpg-fallback: 'Courier New', Courier, monospace;
+
+  /* Font Sizes - Pixel-art friendly scale */
+  --font-size-rpg-xs: 0.625rem;
+  --font-size-rpg-sm: 0.75rem;
+  --font-size-rpg-base: 0.8rem;
+  --font-size-rpg-md: 0.875rem;
+  --font-size-rpg-lg: 1rem;
+  --font-size-rpg-xl: 1.14rem;
+  --font-size-rpg-2xl: 1.25rem;
+  --font-size-rpg-3xl: 1.5rem;
+
+  /* Line Heights - Optimized for pixel fonts */
+  --line-height-rpg-tight: 1.2;
+  --line-height-rpg-normal: 1.375;
+  --line-height-rpg-relaxed: 1.625;
+  --line-height-rpg-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-rpg-tight: -0.025em;
+  --letter-spacing-rpg-normal: 0;
+  --letter-spacing-rpg-wide: 0.025em;
 }
 
 /* Custom base styles */
 @layer base {
-  /* Global font settings will be configured in Task 2.2 */
+  /* RPG content wrapper - applies pixel font and base styles */
+  .rpgui-content {
+    font-family: var(--font-rpg);
+    font-size: var(--font-size-rpg-base);
+    line-height: var(--line-height-rpg-normal);
+    color: var(--color-rpg-text);
+  }
+
+  /* Apply pixel font to all RPGUI elements */
+  .rpgui-content * {
+    font-family: inherit;
+  }
 }
 
 /* Custom component styles */
