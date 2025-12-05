@@ -130,5 +130,85 @@
 
 /* Custom utility classes */
 @layer utilities {
-  /* Utility classes will be added in Phase 2 */
+  /* ----------------------------------------
+   * Text Shadow Utilities - Task 2.3
+   * Pixel-art text outline effects
+   * ---------------------------------------- */
+
+  /* Standard pixel outline (2px black) - default RPGUI style */
+  .text-outline {
+    text-shadow:
+      -2px 0 var(--color-rpg-text-shadow),
+      0 2px var(--color-rpg-text-shadow),
+      2px 0 var(--color-rpg-text-shadow),
+      0 -2px var(--color-rpg-text-shadow);
+  }
+
+  /* Thin pixel outline (1px) */
+  .text-outline-sm {
+    text-shadow:
+      -1px 0 var(--color-rpg-text-shadow),
+      0 1px var(--color-rpg-text-shadow),
+      1px 0 var(--color-rpg-text-shadow),
+      0 -1px var(--color-rpg-text-shadow);
+  }
+
+  /* Thick pixel outline (3px) */
+  .text-outline-lg {
+    text-shadow:
+      -3px 0 var(--color-rpg-text-shadow),
+      0 3px var(--color-rpg-text-shadow),
+      3px 0 var(--color-rpg-text-shadow),
+      0 -3px var(--color-rpg-text-shadow);
+  }
+
+  /* Custom color outline variants */
+  .text-outline-white {
+    text-shadow:
+      -2px 0 white,
+      0 2px white,
+      2px 0 white,
+      0 -2px white;
+  }
+
+  .text-outline-golden {
+    text-shadow:
+      -2px 0 var(--color-rpg-golden-dark),
+      0 2px var(--color-rpg-golden-dark),
+      2px 0 var(--color-rpg-golden-dark),
+      0 -2px var(--color-rpg-golden-dark);
+  }
+
+  /* Drop shadow variant (for depth effect) */
+  .text-shadow-drop {
+    text-shadow: 2px 2px 0 var(--color-rpg-text-shadow);
+  }
+
+  .text-shadow-drop-lg {
+    text-shadow: 3px 3px 0 var(--color-rpg-text-shadow);
+  }
+
+  /* Glow effects */
+  .text-glow-golden {
+    text-shadow:
+      0 0 4px var(--color-rpg-golden),
+      0 0 8px var(--color-rpg-golden-dark);
+  }
+
+  .text-glow-health {
+    text-shadow:
+      0 0 4px var(--color-rpg-health),
+      0 0 8px var(--color-rpg-health-dark);
+  }
+
+  .text-glow-mana {
+    text-shadow:
+      0 0 4px var(--color-rpg-mana),
+      0 0 8px var(--color-rpg-mana-dark);
+  }
+
+  /* No text shadow */
+  .text-outline-none {
+    text-shadow: none;
+  }
 }
