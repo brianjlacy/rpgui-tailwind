@@ -10,6 +10,9 @@ import './styles/main.css';
 // Export version
 export const VERSION = '0.0.1';
 
+// Export type definitions
+export * from './types';
+
 // Export utility functions
 export * from './utils';
 
