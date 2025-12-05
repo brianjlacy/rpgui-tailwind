@@ -381,4 +381,42 @@
       url('/assets/images/cursor/select.png') 10 0,
       auto;
   }
+
+  /* ----------------------------------------
+   * Pixelated Rendering Utilities - Task 2.6
+   * Preserve pixel-art crispness when scaling
+   * ---------------------------------------- */
+
+  /* Pixelated image rendering - maintains crisp edges when scaling */
+  .pixelated {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+  }
+
+  /* Alias for pixelated - crisp-edges */
+  .crisp-edges {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  /* Reset to auto (browser default smooth scaling) */
+  .render-auto {
+    image-rendering: auto;
+  }
+
+  /* Apply pixelated rendering to all images within RPGUI content */
+  .rpgui-content img,
+  .rpgui-content canvas {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+  }
 }

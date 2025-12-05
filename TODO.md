@@ -102,7 +102,7 @@ This document tracks all phases and tasks for converting RPGUI to a Tailwind CSS
 - Set up cursor image paths
 - Create cursor utility classes
 
-### [ ] Task 2.6: Create Pixelated Rendering Utility
+### [✅] Task 2.6: Create Pixelated Rendering Utility
 - Create utility for image-rendering: pixelated
 - Support for crisp-edges fallback
 - Apply to all RPG assets by default
