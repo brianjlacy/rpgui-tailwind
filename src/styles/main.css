@@ -633,4 +633,92 @@
   .h-rpg-button-lg {
     height: var(--height-rpg-button-lg);
   }
+
+  /* ----------------------------------------
+   * Scrollbar Styling - Task 2.8
+   * Custom RPG-themed scrollbars
+   * ---------------------------------------- */
+
+  /* Scrollbar configuration variables */
+  .scrollbar-rpg {
+    --scrollbar-width: 18px;
+    --scrollbar-track-size: 18px 60px;
+  }
+
+  /* Webkit scrollbar styling (Chrome, Safari, Edge) */
+  .scrollbar-rpg::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+  }
+
+  .scrollbar-rpg::-webkit-scrollbar-track {
+    background-image: url('/assets/images/scrollbars/scrollbar-track.png');
+    background-size: 18px 60px;
+    background-repeat: repeat-y;
+  }
+
+  .scrollbar-rpg::-webkit-scrollbar-thumb {
+    background-image: url('/assets/images/scrollbars/scrollbar-thumb.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .scrollbar-rpg::-webkit-scrollbar-button {
+    background-image: url('/assets/images/scrollbars/scrollbar-button.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 18px;
+  }
+
+  /* Apply scrollbar styling to all descendants */
+  .scrollbar-rpg *::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+  }
+
+  .scrollbar-rpg *::-webkit-scrollbar-track {
+    background-image: url('/assets/images/scrollbars/scrollbar-track.png');
+    background-size: 18px 60px;
+    background-repeat: repeat-y;
+  }
+
+  .scrollbar-rpg *::-webkit-scrollbar-thumb {
+    background-image: url('/assets/images/scrollbars/scrollbar-thumb.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .scrollbar-rpg *::-webkit-scrollbar-button {
+    background-image: url('/assets/images/scrollbars/scrollbar-button.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 18px;
+  }
+
+  /* Firefox scrollbar styling */
+  .scrollbar-rpg,
+  .scrollbar-rpg * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-rpg-primary) var(--color-rpg-bg-dark);
+  }
+
+  /* Hide scrollbar utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Thin scrollbar utility for modern browsers */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
 }
