@@ -19,4 +19,5 @@ export * from './utils';
 // Export asset manifest
 export * from './assets';
 
-// Components will be exported here as they are implemented
+// Export components
+export * from './components';
