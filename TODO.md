@@ -142,7 +142,7 @@ This document tracks all phases and tasks for converting RPGUI to a Tailwind CSS
 - Add unit tests
 - Create Storybook story
 
-### [ ] Task 3.4: Implement Frame Component
+### [✅] Task 3.4: Implement Frame Component
 - Create Frame component with border-image styling
 - Implement all 4 variants (default, golden, golden-2, grey)
 - Support nested frames

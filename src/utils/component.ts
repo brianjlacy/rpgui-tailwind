@@ -292,17 +292,6 @@ export function applyContentStyles(element: HTMLElement): void {
 }
 
 /**
- * Apply frame styles to an element
- */
-export function applyFrameStyles(
-  element: HTMLElement,
-  variant?: 'golden' | 'golden2' | 'grey'
-): void {
-  const frameClass = variant ? `border-frame-${variant}` : 'border-frame';
-  addClass(element, frameClass, 'p-rpg-frame');
-}
-
-/**
  * Create a visually hidden element for accessibility
  */
 export function createVisuallyHidden(content: string): HTMLSpanElement {

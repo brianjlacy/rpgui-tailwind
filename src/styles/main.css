@@ -353,6 +353,41 @@
     border-image: none;
   }
 
+  /* Frame Background Images */
+  .bg-frame {
+    background: url('/assets/images/frames/background-image.png') repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center;
+  }
+
+  .bg-frame-golden {
+    background: url('/assets/images/frames/background-image-golden.png') repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center;
+  }
+
+  .bg-frame-golden2 {
+    background: url('/assets/images/frames/background-image-golden2.png') repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center;
+  }
+
+  .bg-frame-grey {
+    background: url('/assets/images/frames/background-image-grey.png') repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center;
+  }
+
+  /* Frame base class for proper positioning */
+  .rpgui-frame {
+    position: relative;
+    box-sizing: border-box;
+  }
+
   /* ----------------------------------------
    * Custom Cursor Utilities - Task 2.5
    * Pixel-art RPG cursor styles

@@ -65,7 +65,6 @@ export {
   normalize,
   denormalize,
   applyContentStyles,
-  applyFrameStyles,
   createVisuallyHidden,
 } from './component';
 export type {
