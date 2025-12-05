@@ -105,6 +105,24 @@
   --letter-spacing-rpg-tight: -0.025em;
   --letter-spacing-rpg-normal: 0;
   --letter-spacing-rpg-wide: 0.025em;
+
+  /* ----------------------------------------
+   * Border Image Configuration - Task 2.4
+   * ---------------------------------------- */
+
+  /* Border image slice values for each frame variant */
+  --border-slice-default: 6;
+  --border-slice-golden: 4;
+  --border-slice-golden2: 8;
+  --border-slice-grey: 3;
+  --border-slice-select: 10%;
+
+  /* Border image width values */
+  --border-width-default: 18px;
+  --border-width-golden: 18px;
+  --border-width-golden2: 18px;
+  --border-width-grey: 7px;
+  --border-width-select: 3px;
 }
 
 /* Custom base styles */
@@ -210,5 +228,82 @@
   /* No text shadow */
   .text-outline-none {
     text-shadow: none;
+  }
+
+  /* ----------------------------------------
+   * Border Image Utilities - Task 2.4
+   * Frame border styling with pixel-art images
+   * ---------------------------------------- */
+
+  /* Default frame border - warm brown wooden style */
+  .border-frame {
+    border-style: solid;
+    border-width: var(--border-width-default);
+    border-image-source: url('/assets/images/frames/border-image.png');
+    border-image-slice: var(--border-slice-default) fill;
+    border-image-width: var(--border-width-default);
+    border-image-repeat: repeat;
+  }
+
+  /* Golden frame border - ornate gold trim */
+  .border-frame-golden {
+    border-style: solid;
+    border-width: var(--border-width-golden);
+    border-image-source: url('/assets/images/frames/border-image-golden.png');
+    border-image-slice: var(--border-slice-golden) fill;
+    border-image-width: var(--border-width-golden);
+    border-image-repeat: repeat;
+  }
+
+  /* Golden2 frame border - thicker ornate gold */
+  .border-frame-golden2 {
+    border-style: solid;
+    border-width: var(--border-width-golden2);
+    border-image-source: url('/assets/images/frames/border-image-golden2.png');
+    border-image-slice: var(--border-slice-golden2) fill;
+    border-image-width: var(--border-width-golden2);
+    border-image-repeat: repeat;
+  }
+
+  /* Grey frame border - stone/metal style */
+  .border-frame-grey {
+    border-style: solid;
+    border-width: var(--border-width-grey);
+    border-image-source: url('/assets/images/frames/border-image-grey.png');
+    border-image-slice: var(--border-slice-grey) fill;
+    border-image-width: var(--border-width-grey);
+    border-image-repeat: repeat;
+  }
+
+  /* Select/dropdown border - thin decorative frame */
+  .border-select {
+    border-style: solid;
+    border-width: var(--border-width-select);
+    border-image-source: url('/assets/images/dropdowns/select-border-image.png');
+    border-image-slice: var(--border-slice-select);
+    border-image-width: var(--border-width-select);
+    border-image-repeat: repeat;
+  }
+
+  /* Border image without fill (no background from border image) */
+  .border-frame-no-fill {
+    border-image-slice: var(--border-slice-default);
+  }
+
+  .border-frame-golden-no-fill {
+    border-image-slice: var(--border-slice-golden);
+  }
+
+  .border-frame-golden2-no-fill {
+    border-image-slice: var(--border-slice-golden2);
+  }
+
+  .border-frame-grey-no-fill {
+    border-image-slice: var(--border-slice-grey);
+  }
+
+  /* Remove border image */
+  .border-frame-none {
+    border-image: none;
   }
 }
