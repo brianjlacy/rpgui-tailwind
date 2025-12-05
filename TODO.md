@@ -90,13 +90,13 @@ This document tracks all phases and tasks for converting RPGUI to a Tailwind CSS
 - Support multiple shadow colors
 - Add responsive variants
 
-### [ ] Task 2.4: Create Border Image Utilities
+### [✅] Task 2.4: Create Border Image Utilities
 - Create Tailwind plugin for border-image support
 - Configure frame border images (default, golden, golden-2, grey)
 - Support border-image-slice configurations
 - Create utility classes for each frame variant
 
-### [ ] Task 2.5: Create Custom Cursor Utilities
+### [✅] Task 2.5: Create Custom Cursor Utilities
 - Create Tailwind plugin for custom cursors
 - Configure all 5 cursor types (default, point, select, grab-open, grab-close)
 - Set up cursor image paths

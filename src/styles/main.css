@@ -306,4 +306,79 @@
   .border-frame-none {
     border-image: none;
   }
+
+  /* ----------------------------------------
+   * Custom Cursor Utilities - Task 2.5
+   * Pixel-art RPG cursor styles
+   * ---------------------------------------- */
+
+  /* Default RPG cursor - arrow */
+  .cursor-rpg {
+    cursor: url('/assets/images/cursor/default.png'), auto;
+  }
+
+  /* Force default cursor on element and children */
+  .cursor-rpg-default,
+  .cursor-rpg-default * {
+    cursor: url('/assets/images/cursor/default.png'), auto !important;
+  }
+
+  /* Point/hand cursor - for clickable elements */
+  .cursor-rpg-point,
+  .cursor-rpg-point * {
+    cursor:
+      url('/assets/images/cursor/point.png') 10 0,
+      auto !important;
+  }
+
+  /* Select cursor - for text selection */
+  .cursor-rpg-select,
+  .cursor-rpg-select * {
+    cursor:
+      url('/assets/images/cursor/select.png') 10 0,
+      auto !important;
+  }
+
+  /* Grab open cursor - for draggable elements */
+  .cursor-rpg-grab,
+  .cursor-rpg-grab * {
+    cursor:
+      url('/assets/images/cursor/grab-open.png') 10 0,
+      auto !important;
+  }
+
+  /* Grab close cursor - for grabbed/dragging state */
+  .cursor-rpg-grabbing,
+  .cursor-rpg-grabbing * {
+    cursor:
+      url('/assets/images/cursor/grab-close.png') 10 0,
+      auto !important;
+  }
+
+  /* Apply default cursor to all RPGUI content */
+  .rpgui-cursors,
+  .rpgui-cursors * {
+    cursor: url('/assets/images/cursor/default.png'), auto;
+  }
+
+  /* Auto-apply pointer cursor to interactive elements within RPGUI content */
+  .rpgui-cursors a,
+  .rpgui-cursors button,
+  .rpgui-cursors [role='button'],
+  .rpgui-cursors label[for] {
+    cursor:
+      url('/assets/images/cursor/point.png') 10 0,
+      auto;
+  }
+
+  /* Auto-apply select cursor to text inputs within RPGUI content */
+  .rpgui-cursors input[type='text'],
+  .rpgui-cursors input[type='password'],
+  .rpgui-cursors input[type='email'],
+  .rpgui-cursors input[type='search'],
+  .rpgui-cursors textarea {
+    cursor:
+      url('/assets/images/cursor/select.png') 10 0,
+      auto;
+  }
 }
