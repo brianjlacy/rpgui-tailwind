@@ -7,5 +7,13 @@
 // Import styles
 import './styles/main.css';
 
-// Components will be exported here as they are implemented
+// Export version
 export const VERSION = '0.0.1';
+
+// Export utility functions
+export * from './utils';
+
+// Export asset manifest
+export * from './assets';
+
+// Components will be exported here as they are implemented
