@@ -7,7 +7,73 @@
  * and custom styles. Tailwind CSS v4 uses CSS-based configuration.
  */
 
-/* Theme configuration will be added in Phase 2 */
+/* ============================================
+ * THEME CONFIGURATION - Phase 2
+ * ============================================ */
+
+@theme {
+  /* ----------------------------------------
+   * Color Palette - Task 2.1
+   * ---------------------------------------- */
+
+  /* Primary Colors - Default frame/button borders */
+  --color-rpg-primary: #8b4513;
+  --color-rpg-primary-light: #a0522d;
+  --color-rpg-primary-dark: #654321;
+
+  /* Golden Variant Colors */
+  --color-rpg-golden: #d4a537;
+  --color-rpg-golden-light: #f0c040;
+  --color-rpg-golden-dark: #8b6914;
+  --color-rpg-golden-border: #c5a028;
+
+  /* Background Colors */
+  --color-rpg-bg-dark: #1a1a2e;
+  --color-rpg-bg-medium: #16213e;
+  --color-rpg-bg-brown: #2d2a1e;
+  --color-rpg-bg-input: #4e4a4e;
+  --color-rpg-bg-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Frame Background Colors (from original images - approximate) */
+  --color-rpg-frame-bg: #3d3a2e;
+  --color-rpg-frame-bg-golden: #4a3c1a;
+  --color-rpg-frame-bg-grey: #3d3d4a;
+
+  /* Text Colors */
+  --color-rpg-text: #ffffff;
+  --color-rpg-text-muted: #d4d4d4;
+  --color-rpg-text-link: #ffff00;
+  --color-rpg-text-shadow: #000000;
+
+  /* Status Colors - Health, Mana, Stamina, Experience */
+  --color-rpg-health: #e63946;
+  --color-rpg-health-dark: #9d0208;
+  --color-rpg-mana: #4361ee;
+  --color-rpg-mana-dark: #3a0ca3;
+  --color-rpg-stamina: #52b788;
+  --color-rpg-stamina-dark: #2d6a4f;
+  --color-rpg-experience: #9b5de5;
+  --color-rpg-experience-dark: #7b2cbf;
+
+  /* Progress Bar Colors (from original) */
+  --color-rpg-progress-purple: #8338ec;
+  --color-rpg-progress-red: #ef233c;
+  --color-rpg-progress-green: #06d6a0;
+  --color-rpg-progress-blue: #118ab2;
+
+  /* Border Colors */
+  --color-rpg-border: #5c4a32;
+  --color-rpg-border-light: #7d6548;
+  --color-rpg-border-dark: #3d3228;
+  --color-rpg-border-golden: #c9a227;
+  --color-rpg-border-grey: #5a5a6e;
+
+  /* Interactive State Colors */
+  --color-rpg-hover: rgba(255, 255, 255, 0.1);
+  --color-rpg-active: rgba(0, 0, 0, 0.2);
+  --color-rpg-focus: #d4a537;
+  --color-rpg-disabled: #6b6b6b;
+}
 
 /* Custom base styles */
 @layer base {
