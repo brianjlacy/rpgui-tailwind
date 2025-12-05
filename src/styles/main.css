@@ -123,6 +123,52 @@
   --border-width-golden2: 18px;
   --border-width-grey: 7px;
   --border-width-select: 3px;
+
+  /* ----------------------------------------
+   * Spacing and Sizing - Task 2.7
+   * Pixel-perfect spacing scale
+   * ---------------------------------------- */
+
+  /* Spacing Scale - Pixel-art friendly (multiples of 4px) */
+  --spacing-rpg-0: 0;
+  --spacing-rpg-1: 4px;
+  --spacing-rpg-2: 8px;
+  --spacing-rpg-3: 12px;
+  --spacing-rpg-4: 16px;
+  --spacing-rpg-5: 20px;
+  --spacing-rpg-6: 24px;
+  --spacing-rpg-8: 32px;
+  --spacing-rpg-10: 40px;
+  --spacing-rpg-12: 48px;
+  --spacing-rpg-16: 64px;
+
+  /* Component Default Padding */
+  --padding-rpg-frame: 12px;
+  --padding-rpg-button: 8px 16px;
+  --padding-rpg-input: 4px 8px;
+
+  /* Icon Sizes */
+  --size-rpg-icon-xs: 16px;
+  --size-rpg-icon-sm: 24px;
+  --size-rpg-icon-md: 32px;
+  --size-rpg-icon-lg: 48px;
+  --size-rpg-icon-xl: 64px;
+
+  /* Component Heights */
+  --height-rpg-control-sm: 24px;
+  --height-rpg-control-md: 32px;
+  --height-rpg-control-lg: 40px;
+  --height-rpg-input: 32px;
+  --height-rpg-button-sm: 32px;
+  --height-rpg-button-md: 40px;
+  --height-rpg-button-lg: 48px;
+
+  /* Container Max Widths */
+  --max-width-rpg-sm: 320px;
+  --max-width-rpg-md: 480px;
+  --max-width-rpg-lg: 640px;
+  --max-width-rpg-xl: 800px;
+  --max-width-rpg-2xl: 1024px;
 }
 
 /* Custom base styles */
@@ -418,5 +464,173 @@
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
     image-rendering: pixelated;
+  }
+
+  /* ----------------------------------------
+   * Spacing Utilities - Task 2.7
+   * Pixel-perfect spacing classes
+   * ---------------------------------------- */
+
+  /* Padding utilities */
+  .p-rpg-0 {
+    padding: var(--spacing-rpg-0);
+  }
+  .p-rpg-1 {
+    padding: var(--spacing-rpg-1);
+  }
+  .p-rpg-2 {
+    padding: var(--spacing-rpg-2);
+  }
+  .p-rpg-3 {
+    padding: var(--spacing-rpg-3);
+  }
+  .p-rpg-4 {
+    padding: var(--spacing-rpg-4);
+  }
+  .p-rpg-5 {
+    padding: var(--spacing-rpg-5);
+  }
+  .p-rpg-6 {
+    padding: var(--spacing-rpg-6);
+  }
+  .p-rpg-8 {
+    padding: var(--spacing-rpg-8);
+  }
+  .p-rpg-10 {
+    padding: var(--spacing-rpg-10);
+  }
+  .p-rpg-12 {
+    padding: var(--spacing-rpg-12);
+  }
+  .p-rpg-16 {
+    padding: var(--spacing-rpg-16);
+  }
+
+  /* Frame default padding */
+  .p-rpg-frame {
+    padding: var(--padding-rpg-frame);
+  }
+
+  /* Margin utilities */
+  .m-rpg-0 {
+    margin: var(--spacing-rpg-0);
+  }
+  .m-rpg-1 {
+    margin: var(--spacing-rpg-1);
+  }
+  .m-rpg-2 {
+    margin: var(--spacing-rpg-2);
+  }
+  .m-rpg-3 {
+    margin: var(--spacing-rpg-3);
+  }
+  .m-rpg-4 {
+    margin: var(--spacing-rpg-4);
+  }
+  .m-rpg-5 {
+    margin: var(--spacing-rpg-5);
+  }
+  .m-rpg-6 {
+    margin: var(--spacing-rpg-6);
+  }
+  .m-rpg-8 {
+    margin: var(--spacing-rpg-8);
+  }
+  .m-rpg-10 {
+    margin: var(--spacing-rpg-10);
+  }
+  .m-rpg-12 {
+    margin: var(--spacing-rpg-12);
+  }
+  .m-rpg-16 {
+    margin: var(--spacing-rpg-16);
+  }
+
+  /* Gap utilities (for flexbox/grid) */
+  .gap-rpg-0 {
+    gap: var(--spacing-rpg-0);
+  }
+  .gap-rpg-1 {
+    gap: var(--spacing-rpg-1);
+  }
+  .gap-rpg-2 {
+    gap: var(--spacing-rpg-2);
+  }
+  .gap-rpg-3 {
+    gap: var(--spacing-rpg-3);
+  }
+  .gap-rpg-4 {
+    gap: var(--spacing-rpg-4);
+  }
+  .gap-rpg-5 {
+    gap: var(--spacing-rpg-5);
+  }
+  .gap-rpg-6 {
+    gap: var(--spacing-rpg-6);
+  }
+  .gap-rpg-8 {
+    gap: var(--spacing-rpg-8);
+  }
+
+  /* Icon size utilities */
+  .icon-xs {
+    width: var(--size-rpg-icon-xs);
+    height: var(--size-rpg-icon-xs);
+  }
+  .icon-sm {
+    width: var(--size-rpg-icon-sm);
+    height: var(--size-rpg-icon-sm);
+  }
+  .icon-md {
+    width: var(--size-rpg-icon-md);
+    height: var(--size-rpg-icon-md);
+  }
+  .icon-lg {
+    width: var(--size-rpg-icon-lg);
+    height: var(--size-rpg-icon-lg);
+  }
+  .icon-xl {
+    width: var(--size-rpg-icon-xl);
+    height: var(--size-rpg-icon-xl);
+  }
+
+  /* Container max-width utilities */
+  .max-w-rpg-sm {
+    max-width: var(--max-width-rpg-sm);
+  }
+  .max-w-rpg-md {
+    max-width: var(--max-width-rpg-md);
+  }
+  .max-w-rpg-lg {
+    max-width: var(--max-width-rpg-lg);
+  }
+  .max-w-rpg-xl {
+    max-width: var(--max-width-rpg-xl);
+  }
+  .max-w-rpg-2xl {
+    max-width: var(--max-width-rpg-2xl);
+  }
+
+  /* Control height utilities */
+  .h-rpg-control-sm {
+    height: var(--height-rpg-control-sm);
+  }
+  .h-rpg-control-md {
+    height: var(--height-rpg-control-md);
+  }
+  .h-rpg-control-lg {
+    height: var(--height-rpg-control-lg);
+  }
+  .h-rpg-input {
+    height: var(--height-rpg-input);
+  }
+  .h-rpg-button-sm {
+    height: var(--height-rpg-button-sm);
+  }
+  .h-rpg-button-md {
+    height: var(--height-rpg-button-md);
+  }
+  .h-rpg-button-lg {
+    height: var(--height-rpg-button-lg);
   }
 }
